@@ -15,7 +15,7 @@
 }
 
 nav{
-    display: ;
+    display: flex;
     padding: 2% 4%;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,7 @@ nav .fa{
     border: 3px solid #241d88;
     padding: 12px 34px;
     font-size: 13px;
-    background: #b1aed1);
+    background: #b1aed1;
     position: relative;
     cursor: pointer;
     transition: 0.5s;
@@ -124,6 +124,101 @@ nav .fa{
     }
 }
 
+/*--------------Login---------------*/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    background-color:rgb(21, 28, 70,0.8);
+}
+.inner-box{
+   position: relative; 
+   width: 100%;
+   height: 100%;
+   transform:rotateY(-180deg);
+   transform-style: preserve-3d;
+   transition: transform 1s;
+   background-color:rgba(211, 211, 211, 0.4) ;
+}
+.card-front, .card-back{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size: cover;
+    background-color:rgba(211, 211, 211, 0.4) ;
+    border-top-color: royalblue;
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    box-shadow: 0 0 40px 20px rgba(80, 79, 79, 0.2);
+    }
+
+.card-back{
+    transform:rotateY(180deg);
+}
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline:none;
+    text-align:center;
+    color: rgb(0, 0, 0);
+}
+::placeholder{
+    color: rgb(3, 3, 3);
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border:1px;
+    margin:25px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline:none;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+}
+span{
+    font-size: 13px;
+    margin-left: 10px; ;
+}
+.sub-button{
+    background-color:rgb(21, 28, 70,0.8);
+    color: rgb(255, 255, 255);
+}
+.bttn{
+    background-color:rgb(21, 28, 70,0.8);
+    color: rgb(255, 249, 249);
+}
+.card .btn{
+    margin-top: 70px;
+}
+hr{
+    border-color: rgb(21, 28, 70);
+}
 /*---------- parqueo --------*/
 
 .course{
@@ -203,7 +298,7 @@ h3{
     color: #777;
 }
 
-
+/*--------------Footer---------------*/
 
 
 
