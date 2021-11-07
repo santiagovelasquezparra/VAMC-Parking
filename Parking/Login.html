@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +22,55 @@
           </div>
           <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      
-  </section>
-
  <!--------- contenido crear cuadro de registro ---------->
- 
+      <div class="container">
+       <div class="card">
+         <div class="inner-box" id="card">
+           <div class=card-front>
+<!-------------------------- Login------------------------->
+              <h2>Iniciar sesi&oacute;n</h2>
+              <hr>
+              <form>
+                
+                <input type="text" class="input-box" placeholder="Ingrese aqui su usuario" required>
+                <input type="password" class="input-box" placeholder="Ingrese aqui su constrase&ntilde;a" required>
+                <hr>
+                <button tyoe="submit" class="sub-button">Ingresar</button>
+                <input type="checkbox"><span> Recordar usuario</span>
+              </form>
+              <button type="button" class="bttn" onclick="openRegister()">Registrarse</button>
+              <hr>
+           </div>
+           <div class=card-back>
+<!-------------------------- Registro ------------------------->
+            <h2>Registro</h2>
+            <form>
+              <hr>
+              <input type="text" class="input-box" placeholder="Nombre" required>
+              <input type="text" class="input-box" placeholder="Usuario" required>
+              <input type="email" class="input-box" placeholder="Email" required>
+              <input type="password" class="input-box" placeholder="Constrase&ntilde;a" required>
+              <hr>
+              <button tyoe="submit" class="sub-button">Registrar</button>
+            </form>
+            <button type="button" class="bttn" onclick="openLogin()">Ya tengo una cuenta</button>
+          <hr>
+          </div>
+         </div>
+       </div>
+      </div> 
+        <script>
+          var card = document.getElementById("card");
+
+          function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+          }
+          function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+          }
+        </script>
+    </section>
+ </body>
 
 <!-------- footer ---------->
 
@@ -36,4 +81,4 @@
     <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
     <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
 </section>  
-
+</html>
