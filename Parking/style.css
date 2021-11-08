@@ -86,7 +86,7 @@ nav .fa{
 
 .hero-btn:hover{
     color: #fff;
-    border: 2px solid rgb(235, 42, 42);
+    border: 2px solid rgb(190, 0, 0);
     background: rgb(235, 42, 42);
 }
 
@@ -227,8 +227,8 @@ hr{
     text-align: center;
     padding-top: 100px;
 }
-h1{
-    font-size: 36px;
+h2{
+    font-size: 45px;
     font-weight: 600;
 }
 p{
@@ -378,8 +378,8 @@ h3{
 
 .formulario-reservacion .boton:hover{
     color: #fff;
-    border: 2px solid rgb(235, 42, 42);
-    background: rgb(235, 42, 42);
+    border: 2px solid rgb(211, 0, 0);
+    background: red;
 }
 /*--------------Footer---------------*/
 
